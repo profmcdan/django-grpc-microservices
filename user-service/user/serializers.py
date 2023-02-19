@@ -6,7 +6,8 @@ from rest_framework import serializers
 from django_grpc_framework.proto_serializers import ModelProtoSerializer
 
 from .models import User, Token
-from .grpc import user_pb2
+# from .grpc import user_pb2
+from django_grpc_proto.py_grpc import user_pb2
 
 
 class UserProtoSerializer(ModelProtoSerializer):
