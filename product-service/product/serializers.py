@@ -1,10 +1,8 @@
-import json
-
 import grpc
 from rest_framework import serializers
 from django.conf import settings
+from django_grpc_proto.py_grpc import user_pb2_grpc, user_pb2
 from .models import Product
-from .grpc import user_pb2_grpc, user_pb2
 
 USER_GRPC_SERVER = settings.USER_GRPC_SERVER
 

@@ -1,12 +1,10 @@
-from django.conf import settings
 from django.contrib.auth import get_user_model
-from django.core.validators import validate_email
 from django.utils.crypto import get_random_string
-from rest_framework import serializers
 from django_grpc_framework.proto_serializers import ModelProtoSerializer
+from django_grpc_proto.py_grpc import user_pb2
+from rest_framework import serializers
 
 from .models import User, Token
-from .grpc import user_pb2
 
 
 class UserProtoSerializer(ModelProtoSerializer):

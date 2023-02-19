@@ -1,9 +1,8 @@
 import grpc
 from google.protobuf import empty_pb2
-from django_grpc_framework.services import Service
 from .models import User
 from .serializers import UserProtoSerializer
-from .grpc import user_pb2_grpc
+from django_grpc_proto.py_grpc import user_pb2_grpc
 
 
 class UserService(user_pb2_grpc.UserServiceServicer):

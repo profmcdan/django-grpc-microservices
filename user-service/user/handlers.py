@@ -1,5 +1,5 @@
 from .services import UserService
-from .grpc import user_pb2_grpc
+from django_grpc_proto.py_grpc import user_pb2_grpc
 
 
 def grpc_handlers(server):

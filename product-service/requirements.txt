@@ -4,3 +4,4 @@ grpc-django==1.0.0
 drf-spectacular==0.25.1
 djangorestframework-simplejwt==5.2.2
 git+https://github.com/profmcdan/django-grpc-framework.git@main
+git+https://github.com/profmcdan/django_grpc_proto.git@main
